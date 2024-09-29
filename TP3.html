@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profil Diri</title>
+</head>
+<body>
+
+<h1>Profil Diri</h1>
+
+<h3>Tentang Saya</h3>
+Halo! Saya adalah mahasiswa Telkom University dengan jurusan Teknologi Informasi.
+<br/>
+<br/>
+
+<!-- <table> digunakan untuk membuat tabel yang menyusun data dalam format baris dan kolom. -->
+<table border="1" cellspacing="0" cellpadding="5" align="center" width="800">
+    <!-- <tr> mendefinisikan baris dalam tabel. -->
+    <tr align="center" bgcolor="pink">
+        <!-- <td> digunakan untuk mendefinisikan sel data dalam tabel. -->
+        <td width="200">DATA DIRI</td>
+        <td width="400">KETERANGAN</td>
+        <td width="200">FOTO</td>
+    </tr>
+    <tr>
+        <td>Nama</td>
+        <td>Chelsea W</td>
+        <!-- img digunakan untuk memberi foto -->
+        <td rowspan="7"><img src="saya.png" width="200"></td>
+    </tr>
+    <tr>
+        <td>Tempat/Tanggal Lahir</td>
+        <td>Tembagapura, 4 Desember 2003</td>
+    </tr>
+    <tr>
+        <td>Alamat</td>
+        <td>xxxxxxx</td>
+    </tr>
+</table>
+
+<h2>Formulir Kontak</h2>
+
+<!-- <form> digunakan untuk membuat formulir interaktif yang dapat mengumpulkan input dari pengguna. -->
+<form action="/submit-profile" method="post">
+    <!-- <label> memberikan deskripsi untuk elemen input, meningkatkan aksesibilitas dan usability. -->
+    <label for="name">Nama:</label><br>
+    <!-- <input> digunakan untuk menerima input dari pengguna. -->
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- <button> digunakan untuk membuat tombol interaktif yang dapat diklik oleh pengguna. -->
+    <button type="submit">Kirim</button>
+</form>
+
+<h2>Media Sosial</h2>
+<div>
+    <!-- <a> digunakan untuk membuat hyperlink yang mengarahkan pengguna ke URL lain. -->
+    <a href="https://www.instagram.com/">Instagram</a> |
+    <a href="https://www.facebook.com/">Facebook</a> |
+    <a href="https://x.com/@X?mx=2">X</a><br>
+</div>
+
+<h2>Video Perkenalan</h2>
+<!-- <video> digunakan untuk menyisipkan video ke dalam halaman web. -->
+<video width="320" height="240" controls>
+    <source src="hehe.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
